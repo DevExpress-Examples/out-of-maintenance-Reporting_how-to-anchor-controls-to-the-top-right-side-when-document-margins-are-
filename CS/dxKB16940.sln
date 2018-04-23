@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dxKB16940", "dxKB16940.csproj", "{D87992CB-FD7B-4E9F-854C-4D96AD5C2DAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D87992CB-FD7B-4E9F-854C-4D96AD5C2DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87992CB-FD7B-4E9F-854C-4D96AD5C2DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87992CB-FD7B-4E9F-854C-4D96AD5C2DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87992CB-FD7B-4E9F-854C-4D96AD5C2DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
