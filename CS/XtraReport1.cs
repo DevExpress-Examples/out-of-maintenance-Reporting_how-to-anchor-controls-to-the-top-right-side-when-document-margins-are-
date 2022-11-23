@@ -24,16 +24,16 @@ namespace WindowsApplication1 {
         private void ChangeReportSettings(object sender) {
             PrintingSystemBase ps = sender as PrintingSystemBase;
             bool isLocationChanged = false;
-            int newPageWidth = 
+            float newPageWidth = 
                 ps.PageBounds.Width - ps.PageMargins.Left - ps.PageMargins.Right;
-            int currentPageWidth = 
+            float currentPageWidth = 
                 this.PageWidth - this.Margins.Left - this.Margins.Right;
-            int shift = currentPageWidth - newPageWidth;
+            float shift = currentPageWidth - newPageWidth;
             foreach (Band _band in base.Bands) {
                 foreach (XRControl _control in _band.Controls) {
                     isLocationChanged = true;
-                    _control.Location = 
-                        new Point((_control.Location.X - shift), _control.Location.Y);
+                    _control.LocationF = 
+                        new PointF((_control.LocationF.X - shift), _control.LocationF.Y);
                 }
             }
             if (isLocationChanged == true) {

@@ -24,13 +24,13 @@ Namespace WindowsApplication1
 		Private Sub ChangeReportSettings(ByVal sender As Object)
 			Dim ps As PrintingSystemBase = TryCast(sender, PrintingSystemBase)
 			Dim isLocationChanged As Boolean = False
-			Dim newPageWidth As Integer = ps.PageBounds.Width - ps.PageMargins.Left - ps.PageMargins.Right
-			Dim currentPageWidth As Integer = Me.PageWidth - Me.Margins.Left - Me.Margins.Right
-			Dim shift As Integer = currentPageWidth - newPageWidth
+			Dim newPageWidth As Single = ps.PageBounds.Width - ps.PageMargins.Left - ps.PageMargins.Right
+			Dim currentPageWidth As Single = Me.PageWidth - Me.Margins.Left - Me.Margins.Right
+			Dim shift As Single = currentPageWidth - newPageWidth
 			For Each _band As Band In MyBase.Bands
 				For Each _control As XRControl In _band.Controls
 					isLocationChanged = True
-					_control.Location = New Point((_control.Location.X - shift), _control.Location.Y)
+					_control.LocationF = New PointF((_control.LocationF.X - shift), _control.LocationF.Y)
 				Next _control
 			Next _band
 			If isLocationChanged = True Then

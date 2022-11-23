@@ -80,7 +80,7 @@ namespace WindowsApplication1 {
             this.PageFooter,
             this.topMarginBand1,
             this.bottomMarginBand1});
-            this.Margins = new System.Drawing.Printing.Margins(100, 72, 100, 100);
+            this.Margins = new DevExpress.Drawing.DXMargins(100, 72, 100, 100);
             this.Version = "12.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

@@ -76,7 +76,7 @@ Namespace WindowsApplication1
 			' XtraReport1
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.PageHeader, Me.PageFooter, Me.topMarginBand1, Me.bottomMarginBand1})
-			Me.Margins = New System.Drawing.Printing.Margins(100, 72, 100, 100)
+			Me.Margins = New DevExpress.Drawing.DXMargins(100, 72, 100, 100)
 			Me.Version = "12.2"
 			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
